@@ -26,7 +26,7 @@ submit.addEventListener('click', e => {
         });
         scores.splice(5);
         username.value = "";
-        alert("Scores Saved")
+        window.alert("Scores Saved");
     }
 
 
