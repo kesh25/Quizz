@@ -13,7 +13,6 @@ window.onload = () => {
         div.appendChild(p);
 
         container.append(div);
-
     })
 
 
