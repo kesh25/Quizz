@@ -1,0 +1,105 @@
+@import './game.css';
+
+/* fonts import */
+
+
+/*global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: 62.5%; */
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+/* custom */
+.hidden {
+    display: none;
+}
+
+.not_visible {
+    visibility: hidden;
+}
+
+.correct {
+    background-color: #28a745;
+}
+
+.incorrect {
+    background-color: #dc3545;
+}
+
+/* root */
+:root {
+    --bcg-color: #B4CDCD;
+    --primary-color: #2F4F4F;
+    --secondary-color: #388E8E;
+    --font-color: #000;
+}
+
+.container {
+    background-color: var(--bcg-color);
+    font-family: consolas, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>* {
+    width: 100%;
+}
+
+.container h1 {
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.container h3 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin: 10px 0 30px;
+}
+
+.btn {
+    font-size: 1.5rem;
+    padding: 7px 10px;
+    margin-right: 0px;
+    width: 10rem;
+    background: white;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+
+}
+
+
+.btn:hover,
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, .5);
+    transform: translateY(-.2rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.btn-prim {
+    background: var(--primary-color);
+    color: #fff;
+}

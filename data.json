@@ -1,0 +1,64 @@
+[{
+        "question": "Two of Henry VIII's six wives were executed. Anne Boleyn was one. Who was the second?",
+        "choice": [
+            "Katherine Parr",
+            "Jane Syemour",
+            "Catherine Howard",
+            "Lady Jane Grey"
+        ],
+        "Answer": "Catherine Howard"
+    },
+    {
+        "question": "Who had his head chopped off in 1649?",
+        "choice": [
+            "James 1",
+            "James II",
+            "Charles I",
+            "Charles II"
+        ],
+        "Answer": "Charles I"
+    },
+    {
+        "question": "When was William Shakespeare born?",
+        "choice": [
+            "1554",
+            "1564",
+            "1574",
+            "1584"
+        ],
+        "Answer": "1564"
+    },
+
+    {
+        "question": "The Merry Wives of ...",
+        "choice": [
+            "Wandsworth",
+            "Wycombe",
+            "Walberswick",
+            "Windsor"
+        ],
+        "Answer": "Windsor"
+    },
+
+    {
+        "question": "Approximately how long ago was Stonehenge built?",
+        "choice": [
+            "10,000 Years",
+            "7,000 Years",
+            "5,000 Years",
+            "3,000 Years"
+        ],
+        "Answer": "5,000 Years"
+    },
+
+    {
+        "question": "Who was English king at the time of the battle of Hastings?",
+        "choice": [
+            "Harold I",
+            "Harold II",
+            "Harold III",
+            "Edward the Confessor"
+        ],
+        "Answer": "Harold II"
+    }
+]
