@@ -27,6 +27,14 @@ const TOTAL_SCORE = 60;
 // const MAX_QUESTIONS = 3;
 
 startGame = (data) => {
+    let game = document.getElementById("game");
+    let loader = document.querySelector(".loader");
+    setTimeout(() => {
+        game.classList.remove("hidden");
+        loader.classList.add("hidden");
+    }, 1000)
+
+
     let totalQuestion = document.querySelector('.totalQuestions');
     totalQuestion.innerText = `${data.length}`
     score = 0;
@@ -49,6 +57,8 @@ startGame = (data) => {
 
             if (selectedChoice.innerHTML === currentQuestionOut["Answer"]) {
                 scoreVal += 10;
+                console.log(scoreVal);
+                localStorage.setItem("Score", scoreVal)
 
 
                 selectedContainer.classList.add('correct');

@@ -1,0 +1,30 @@
+.user-input {
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    width: 20rem;
+    margin: 0 auto;
+
+}
+
+form label {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#username {
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, .5);
+}
+
+#submit {
+    margin: 0 auto;
+}

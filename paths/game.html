@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quizz Time !!</title>
-    <link rel="stylesheet" href="../css/main.css" />
-  </head>
 
-  <body>
-    <div class="container game-container">
-      <div id="game">
-        <p id="counter">
-          Question: <span class="currQuestion">1 </span>/ &nbsp;<span
-            class="totalQuestions"
-          >
-            &nbsp;5</span
-          >
-        </p>
-        <div id="progressbar">
-          <div class="progress-bar"></div>
-        </div>
-        <h2 id="question">
-          What is the answer of this?
-        </h2>
-        <div class="choice-container">
-          <p class="choice-prefix">A</p>
-          <p class="choice-text" data-number="1">Choice</p>
-        </div>
-        <div class="choice-container">
-          <p class="choice-prefix">B</p>
-          <p class="choice-text" data-number="2">Choice</p>
-        </div>
-        <div class="choice-container">
-          <p class="choice-prefix">D</p>
-          <p class="choice-text" data-number="3">Choice</p>
-        </div>
-        <div class="choice-container">
-          <p class="choice-prefix">D</p>
-          <p class="choice-text" data-number="4">Choice</p>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quizz Time !!</title>
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+  <div class="container game-container">
+    <div class="loader"></div>
+    <div id="game" class="hidden">
+      <p id="counter">
+        Question: <span class="currQuestion">1 </span>/ &nbsp;<span class="totalQuestions">
+          &nbsp;5</span>
+      </p>
+      <div id="progressbar">
+        <div class="progress-bar"></div>
       </div>
+      <h2 id="question">
 
-      <a id="finish-btn" href="./results.html" class="btn btn-prim" disabled
-        >Finish</a
-      >
+      </h2>
+      <div class="choice-container">
+        <p class="choice-prefix">A</p>
+        <p class="choice-text" data-number="1"></p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">B</p>
+        <p class="choice-text" data-number="2"></p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">D</p>
+        <p class="choice-text" data-number="3"></p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">D</p>
+        <p class="choice-text" data-number="4"></p>
+      </div>
     </div>
 
-    <script src="../js/app.js"></script>
-  </body>
+    <a id="finish-btn" href="./results.html" class="btn btn-prim" disabled>Finish</a>
+  </div>
+
+  <script src="../js/app.js"></script>
+</body>
+
 </html>

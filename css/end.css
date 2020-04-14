@@ -1,0 +1,23 @@
+:root {
+    --bcg-color: #B4CDCD;
+    --primary-color: #2F4F4F;
+    --secondary-color: #388E8E;
+    --font-color: #000;
+}
+
+.scorearea {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.player {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 4rem;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, .5);
+}
