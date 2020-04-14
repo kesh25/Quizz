@@ -2,11 +2,19 @@ let score = document.querySelector(".scoreVal");
 let username = document.getElementById("username");
 let submit = document.getElementById("submit");
 
-let scores = JSON.parse(localStorage.getItem('highscores'));
+let scoredValues = localStorage.getItem('highscores');
+
+
+
+
+
+
+
 let currentScore = JSON.parse(localStorage.getItem('Score'));
 
 window.onload = function () {
     score.innerText = currentScore;
+
 }
 
 
@@ -20,17 +28,36 @@ submit.addEventListener('click', e => {
             usernameValue,
             currentScore,
         }
-        scores.push(playerScore);
-        scores.sort((a, b) => {
-            return b.currentScore - a.currentScore;
-        });
-        scores.splice(5);
+
+        if (!scoredValues) {
+            let scores = [];
+            scores.push(playerScore);
+            scores.sort((a, b) => {
+                return b.currentScore - a.currentScore;
+            });
+            scores.splice(5);
+            localStorage.setItem("highscores", JSON.stringify(scores));
+
+        } else {
+
+            let scores = JSON.parse(localStorage.getItem('highscores'));
+
+            scores.push(playerScore);
+            scores.sort((a, b) => {
+                return b.currentScore - a.currentScore;
+            });
+            scores.splice(5);
+            localStorage.setItem("highscores", JSON.stringify(scores));
+        }
+
+
         username.value = "";
-        window.alert("Scores Saved");
+        window.alert("Score Saved");
+
     }
 
 
 
-    localStorage.setItem("highscores", JSON.stringify(scores));
+
 
 })
